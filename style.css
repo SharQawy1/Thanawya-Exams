@@ -1,0 +1,76 @@
+* {
+  --main-color: #35d3ec;
+  --main-transition: 0.2s;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+}
+
+.container {
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  height: 100vh;
+}
+.counter {
+  height: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-flow: row-reverse wrap;
+}
+.title {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 10px;
+}
+.box {
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.4)
+  );
+  padding: 10px;
+  border-radius: 10px;
+}
+.counter .time {
+  display: flex;
+  align-items: center;
+  margin: 20px auto;
+  gap: 10px;
+  justify-content: center;
+}
+.counter .time .unit {
+  border: 1px solid #d4d4d4;
+  border-radius: 6px;
+  text-align: center;
+  width: 75px;
+  transition: var(--main-transition);
+}
+.counter .unit span {
+  display: block;
+  transition: var(--main-transition);
+}
+.counter .time .unit span:first-child {
+  font-size: 35px;
+  padding: 15px;
+  color: var(--main-color);
+  font-weight: bold;
+}
+.counter .time .unit span:last-child {
+  padding: 8px 10px;
+  font-size: 15px;
+  border-top: 1px solid #d5d5d5;
+}
+.counter .time .unit:hover,
+.counter .time .unit:hover span:last-child {
+  border-color: var(--main-color);
+}
+.footer {
+  text-align: center;
+  color: #3eb0bc;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
