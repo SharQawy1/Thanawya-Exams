@@ -48,6 +48,9 @@ body {
   width: 75px;
   transition: var(--main-transition);
 }
+.counter .time .days {
+  border: 1px solid var(--main-color);
+}
 .counter .unit span {
   display: block;
   transition: var(--main-transition);
