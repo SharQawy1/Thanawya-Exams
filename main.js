@@ -29,7 +29,7 @@ let counter2 = setInterval(() => {
   let dateDIff = azhardownDate - dateNow;
   if (dateDIff < 0) {
     document.querySelector(
-      ".aama .title"
+      ".azhar .title"
     ).innerHTML = `لقد بدأت امتحانات الثانوية الأزهرية وستنتهي بعد`;
     dateDIff = new Date("July 12, 2023 00:00:00") - dateNow;
   }
